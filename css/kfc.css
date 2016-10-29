@@ -28,9 +28,10 @@ li{
     -webkit-transition: ease-in-out 0.2s;
             transition: ease-in-out 0.2s;
 }
+
 a{
-    text-decoration: none;
-    color: #388E3C;
+    text-decoration:none;
+    color: saddlebrown;
 }
 a:hover{
     color:#FF9800;
