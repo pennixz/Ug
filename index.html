@@ -29,7 +29,7 @@
     <header class="container">
         <h1 class="align-center">Ulstad Gård</h1>
         <div class="row">
-            <ul class="align-center">
+            <ul class="align-center" id="desktopnav">
                 <a href="index.html">
                     <li>Hjem</li>
                 </a>
@@ -44,6 +44,22 @@
                 </a>
 <!--                <a onclick="toggle();" id="menu"><i class="fa fa-2x fa-bars"></i></a>-->
             </ul>
+            <ul class="align-center hidden" id="mobilenav">
+                <a href="index.html">
+                    <li>Hjem</li>
+                </a>
+                <a href="salg.html">
+                    <li>Salg</li>
+                </a>
+                <a href="kontakt.html">
+                    <li>Kontakt</li>
+                </a>
+                <a href="hoyensilasje.html">
+                    <li>Høyensilasje </li>
+                </a>
+                
+            </ul>
+            <p><a onclick="toggleNav()" class="align-center" id="menu">meny</a></p>
 
         </div>
         <!-- /.container -->
@@ -86,7 +102,7 @@
     <!-- /.container -->
 
     <!-- JAVASCRIPT -->
-    <script src="js/ksstm.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 

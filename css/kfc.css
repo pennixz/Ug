@@ -19,6 +19,7 @@ header{
     margin-top:0px;
     padding-top:0px;
 }
+
 ul{
     list-style: none;
 }
@@ -32,6 +33,7 @@ li{
 a{
     text-decoration:none;
     color: #4CAF50;
+    cursor:pointer;
 }
 a:hover{
     color:#FF9800;
@@ -83,7 +85,7 @@ brown {color: saddlebrown;}
 }
 
 .showing {
-    display: inline-block;
+    display: block;
 }
 .hidden {
     display: none;
@@ -92,14 +94,22 @@ brown {color: saddlebrown;}
 #menu {
     display:none;
 }
+#mobilenav {
+    -webkit-transition: ease-in-out 1s;
+            transition: ease-in-out 1s;
+}
+#mobilenav li{
+    display:block;
+    padding: 3px 0px;
+    -webkit-transition: ease-in-out 3s;
+            transition: ease-in-out 3s;
+}
 #fb_icon {
     color:#3C5CF4;
 }
 @media screen and (max-width: 550px) {
-    li{
-        display:block;
-        margin-top: 10px;
-    }
+
+    #desktopnav {display:none}
     #menu {
         display: block;
     }
