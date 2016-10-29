@@ -20,6 +20,8 @@ header{
     padding-top:0px;
 }
 
+
+
 ul{
     list-style: none;
 }
@@ -83,35 +85,51 @@ brown {color: saddlebrown;}
     box-shadow: inset 0px 3px 10px #999;
 
 }
-
+#transition {
+    transition: max-height 1s;
+}
 .showing {
-    display: block;
+    max-height: 500px;
+    transition: max-height 1s;
+    transition: opacity 1.5s;
+    opacity: 1;
 }
 .hidden {
-    display: none;
+    max-height: 0;
+    
+    overflow:hidden;
+    transition: opacity 1s;
+    transition: max-height 1s;
+    opacity: 0;
 }
 
 #menu {
     display:none;
+    color:saddlebrown;
 }
-#mobilenav {
-    -webkit-transition: ease-in-out 1s;
-            transition: ease-in-out 1s;
+
+
+}#mobilenav {
+    transition: max-height 1s;
 }
+
 #mobilenav li{
     display:block;
     padding: 3px 0px;
-    -webkit-transition: ease-in-out 3s;
-            transition: ease-in-out 3s;
 }
 #fb_icon {
     color:#3C5CF4;
 }
 @media screen and (max-width: 550px) {
 
-    #desktopnav {display:none}
+    #desktopnav {
+        display:none
+    }
     #menu {
         display: block;
+    }
+    header h1{
+        margin: 5px
     }
 }
 

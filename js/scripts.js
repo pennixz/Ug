@@ -1,4 +1,13 @@
 function toggleNav() {
     var mobileNav = document.getElementById('mobilenav');
-    mobileNav.className == "align-center hidden" ? mobileNav.className = "align-center showing": mobileNav.className ="align-center hidden";
+    var menu = document.getElementById('menu');
+    // if class hidden, set class showing, else set class hidden
+    if(mobileNav.className == "container hidden") {
+        mobileNav.className = "container showing";
+        menu.innerHTML = "skjul meny";
+    }
+    else {
+        mobileNav.className = "container hidden";
+        menu.innerHTML = "meny"
+    }
 }

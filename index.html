@@ -28,7 +28,8 @@
 <body>
     <header class="container">
         <h1 class="align-center">Ulstad Gård</h1>
-        <div class="row">
+        <div class="row" id="transition">
+            
             <ul class="align-center" id="desktopnav">
                 <a href="index.html">
                     <li>Hjem</li>
@@ -44,7 +45,8 @@
                 </a>
 <!--                <a onclick="toggle();" id="menu"><i class="fa fa-2x fa-bars"></i></a>-->
             </ul>
-            <ul class="align-center hidden" id="mobilenav">
+            <div class="container hidden" id="mobilenav">
+            <ul class="align-center">
                 <a href="index.html">
                     <li>Hjem</li>
                 </a>
@@ -59,6 +61,7 @@
                 </a>
                 
             </ul>
+                </div>
             <p><a onclick="toggleNav()" class="align-center" id="menu">meny</a></p>
 
         </div>
