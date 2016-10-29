@@ -1,0 +1,106 @@
+
+/*  ACCENT COLOR : #FF9800
+    PRIMARY : #4CAF50
+    DARK PRIMARY : #388E3C
+*/
+
+.align-center{
+    text-align:center;
+    
+}
+.orange {
+    color:#FF9800;
+}
+.dark {
+    background: #388E3C;
+    color: white;
+}
+header{
+    margin-top:0px;
+    padding-top:0px;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin: 0px 5px;
+    display: inline-block;
+    -webkit-transition: ease-in-out 0.2s;
+            transition: ease-in-out 0.2s;
+}
+a{
+    text-decoration: none;
+    color: #388E3C;
+}
+a:hover{
+    color:#FF9800;
+    opacity: 0.7;
+}
+
+body{
+    margin: 0px;
+    background: #edf7ee;    
+}
+.button, input.button {
+    background: saddlebrown;
+    color: white;
+    border:none;
+    box-shadow: 0px 4px 7px #999999;
+}
+.button:focus, input.button:focus {
+    background: saddlebrown;
+    color: white;
+    opacity:0.7
+/*    box-shadow: 0px 0px 5px #888888;*/
+}
+.button:hover, input.button:hover {
+    background: saddlebrown;
+    color:white;
+    opacity: 0.7;
+}
+
+input:required {
+    border-bottom: 1px solid saddlebrown;
+}
+input:valid{
+    border-bottom: 1px solid green;
+}
+span{
+    color:#4CAF50;
+}
+brown {color: saddlebrown;}
+.span-two {}
+.img {
+    background-image: url("/images/On-The-Farm-Header.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin-bottom: 25px;
+    box-shadow: inset 0px 3px 10px #999;
+
+}
+
+.showing {
+    display: inline-block;
+}
+.hidden {
+    display: none;
+}
+
+#menu {
+    display:none;
+}
+#fb_icon {
+    color:#3C5CF4;
+}
+@media screen and (max-width: 550px) {
+    li{
+        display:block;
+        margin-top: 10px;
+    }
+    #menu {
+        display: block;
+    }
+}
+
