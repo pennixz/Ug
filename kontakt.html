@@ -25,9 +25,26 @@
 </head>
 
 <body>
-    <header class="container">
+        <header class="container">
         <h1 class="align-center">Ulstad Gård</h1>
-        <div class="row">
+        <div class="row" id="transition">
+            
+            <ul class="align-center" id="desktopnav">
+                <a href="index.html">
+                    <li>Hjem</li>
+                </a>
+                <a href="salg.html">
+                    <li>Salg</li>
+                </a>
+                <a href="kontakt.html">
+                    <li>Kontakt</li>
+                </a>
+                <a href="hoyensilasje.html">
+                    <li>Høyensilasje </li>
+                </a>
+<!--                <a onclick="toggle();" id="menu"><i class="fa fa-2x fa-bars"></i></a>-->
+            </ul>
+            <div class="container hidden" id="mobilenav">
             <ul class="align-center">
                 <a href="index.html">
                     <li>Hjem</li>
@@ -41,7 +58,11 @@
                 <a href="hoyensilasje.html">
                     <li>Høyensilasje </li>
                 </a>
+                
             </ul>
+                </div>
+            <p><a onclick="toggleNav()" class="align-center" id="menu">meny</a></p>
+
         </div>
         <!-- /.container -->
     </header>
