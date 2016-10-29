@@ -34,7 +34,7 @@ li{
 
 a{
     text-decoration:none;
-    color: #4CAF50;
+    color: #388E3C;
     cursor:pointer;
 }
 a:hover{
@@ -85,32 +85,22 @@ brown {color: saddlebrown;}
     box-shadow: inset 0px 3px 10px #999;
 
 }
-#transition {
-    transition: max-height 1s;
-}
+
 .showing {
     max-height: 500px;
-    transition: max-height 1s;
-    transition: opacity 1.5s;
+    height: 100%;
     opacity: 1;
 }
 .hidden {
     max-height: 0;
-    
+    height: 0;
     overflow:hidden;
-    transition: opacity 1s;
-    transition: max-height 1s;
     opacity: 0;
 }
 
 #menu {
     display:none;
     color:saddlebrown;
-}
-
-
-}#mobilenav {
-    transition: max-height 1s;
 }
 
 #mobilenav li{
@@ -124,6 +114,11 @@ brown {color: saddlebrown;}
 
     #desktopnav {
         display:none
+    }
+    #mobilenav {
+        -webkit-transition: all ease-in-out 0.8s;
+                transition: all ease-in-out 0.8s;
+
     }
     #menu {
         display: block;
