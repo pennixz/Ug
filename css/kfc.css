@@ -71,7 +71,7 @@ span{
 brown {color: saddlebrown;}
 .span-two {}
 .img {
-    background-image: url("/images/On-The-Farm-Header.jpg");
+    background-image: url("ul-gard/images/On-The-Farm-Header.jpg");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
