@@ -19,8 +19,18 @@ header{
     margin-top:0px;
     padding-top:0px;
 }
+.hide{
+    height: 0px;
+ 
+}
+.show{
+    max-height: 250px;
+    height: 250px;
+}
+#g_spot {
+    overflow:visible;
 
-
+}
 
 ul{
     list-style: none;
@@ -28,8 +38,6 @@ ul{
 li{
     margin: 0px 5px;
     display: inline-block;
-    -webkit-transition: ease-in-out 0.2s;
-            transition: ease-in-out 0.2s;
 }
 
 a{
@@ -45,6 +53,9 @@ a:hover{
 body{
     margin: 0px;
     background: #edf7ee;    
+}
+
+.small {
 }
 .button, input.button {
     background: saddlebrown;
